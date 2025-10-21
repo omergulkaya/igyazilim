@@ -13,6 +13,7 @@ app.get("/*", (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`🚀 Creative Studio server running on http://localhost:${port}`);
+  console.log(`🚀 IG Yazılım server running on http://localhost:${port}`);
   console.log(`📦 React app is ready!`);
+  console.log(`🌍 SEO optimized for all Turkey!`);
 });

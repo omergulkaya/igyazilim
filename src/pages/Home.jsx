@@ -6,9 +6,9 @@ const Home = () => {
 
   const heroSlides = [
     {
-      title: 'Dijital Dünyada',
-      highlight: 'Fark Yaratın',
-      description: 'Modern, yaratıcı ve profesyonel web çözümleri ile markanızı dijital dünyada zirveye taşıyoruz. Hayalinizdeki projeyi birlikte gerçekleştirelim.',
+      title: 'Türkiye\'nin Web Tasarım',
+      highlight: 'Uzmanı IG Yazılım',
+      description: 'İstanbul, Ankara, İzmir, Bursa, Antalya ve tüm Türkiye\'de profesyonel web tasarım, mobil uygulama geliştirme ve dijital pazarlama hizmetleri.',
       primaryBtn: 'Hemen Başlayın',
       secondaryBtn: 'Portfolyoyu İncele',
       primaryLink: '/contact',
@@ -17,9 +17,9 @@ const Home = () => {
       bgImage: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80',
     },
     {
-      title: 'Web Tasarımda',
-      highlight: 'Yeni Standartlar',
-      description: 'Benzersiz tasarımlar ve kullanıcı dostu arayüzlerle markanızı öne çıkarıyoruz. Modern teknolojilerle geleceği bugünden inşa ediyoruz.',
+      title: 'Kurumsal Web Tasarım',
+      highlight: 'E-Ticaret Çözümleri',
+      description: 'Responsive web tasarım, mobil uyumlu site yapımı ve SEO optimizasyonu ile işletmenizi dijital dünyada büyütün. 250+ başarılı proje.',
       primaryBtn: 'Hizmetlerimiz',
       secondaryBtn: 'Referanslar',
       primaryLink: '/services',
@@ -28,9 +28,9 @@ const Home = () => {
       bgImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80',
     },
     {
-      title: 'Başarınız İçin',
-      highlight: 'Uzman Ekip',
-      description: '8 yılı aşkın tecrübemiz ve 250+ başarılı projemizle sizin de başarı hikayenizi yazmaya hazırız. Kaliteli hizmet, zamanında teslimat garantisi.',
+      title: 'Yazılım Firması',
+      highlight: 'IG Yazılım ile Fark Yaratın',
+      description: '8 yıllık tecrübe, 180+ mutlu müşteri. İstanbul merkezli, Türkiye genelinde web sitesi yapımı, mobil app geliştirme ve dijital pazarlama hizmetleri.',
       primaryBtn: 'Bizi Tanıyın',
       secondaryBtn: 'İletişime Geçin',
       primaryLink: '/about',

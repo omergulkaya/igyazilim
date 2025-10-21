@@ -38,10 +38,10 @@ const Footer = () => {
         {/* Newsletter Section */}
         <div className="mb-16 bg-gradient-to-r from-flamingo to-supernova rounded-3xl p-8 md:p-12 text-center">
           <h3 className="font-display font-bold text-3xl md:text-4xl text-white mb-4">
-            Haberdar Olmak İster misiniz?
+            IG Yazılım Bülteni
           </h3>
           <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-            En son haberler, özel teklifler ve dijital dünyadan ipuçları için bültenimize abone olun.
+            Web tasarım, mobil uygulama ve dijital pazarlama hakkında en son haberler, özel teklifler ve ipuçları.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
             <input
@@ -56,6 +56,33 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* SEO - Türkiye Şehirleri */}
+        <div className="mb-12 bg-cape-cod/30 rounded-3xl p-8">
+          <h3 className="font-display font-bold text-2xl text-white mb-6 text-center">
+            Hizmet Verdiğimiz <span className="gradient-text">Şehirler</span>
+          </h3>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            {[
+              'İstanbul', 'Ankara', 'İzmir', 'Bursa', 'Antalya', 'Adana', 'Gaziantep', 'Konya',
+              'Kocaeli', 'Mersin', 'Diyarbakır', 'Kayseri', 'Eskişehir', 'Şanlıurfa', 'Samsun',
+              'Denizli', 'Sakarya', 'Hatay', 'Malatya', 'Manisa', 'Kahramanmaraş', 'Van',
+              'Aydın', 'Tekirdağ', 'Balıkesir', 'Muğla', 'Trabzon', 'Elazığ', 'Erzurum', 'Ordu',
+              'Afyon', 'Sivas', 'Çorum', 'Zonguldak', 'Kütahya', 'Tokat', 'Edirne', 'Rize'
+            ].map((city, index) => (
+              <span
+                key={index}
+                className="px-4 py-2 bg-white/10 hover:bg-gradient-to-r hover:from-flamingo hover:to-supernova rounded-full text-white/80 hover:text-white transition-all duration-300 cursor-pointer"
+              >
+                {city} Web Tasarım
+              </span>
+            ))}
+          </div>
+          <p className="text-white/60 text-center mt-6 text-sm">
+            IG Yazılım olarak İstanbul merkezli, Türkiye'nin tüm illerinde web tasarım, mobil uygulama geliştirme, 
+            e-ticaret ve dijital pazarlama hizmetleri sunuyoruz.
+          </p>
+        </div>
+
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
@@ -63,13 +90,13 @@ const Footer = () => {
             <Link to="/" className="inline-block group">
               <div className="flex items-center space-x-3">
                 <div className="w-14 h-14 bg-gradient-to-br from-flamingo to-supernova rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300 shadow-lg">
-                  <span className="text-white font-display font-bold text-2xl">CS</span>
+                  <span className="text-white font-display font-bold text-2xl">IG</span>
                 </div>
-                <span className="font-display font-bold text-2xl">Creative Studio</span>
+                <span className="font-display font-bold text-2xl">IG Yazılım</span>
               </div>
             </Link>
             <p className="text-white/70 leading-relaxed">
-              Modern, yaratıcı ve profesyonel web çözümleri ile markanızı dijital dünyada zirveye taşıyoruz.
+              İstanbul, Ankara, İzmir ve tüm Türkiye'de modern web tasarım, mobil uygulama ve dijital pazarlama hizmetleri sunuyoruz.
             </p>
             {/* Social Media */}
             <div>
@@ -178,11 +205,11 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center space-x-2 text-white/50 text-sm">
-              <span>© {currentYear} Creative Studio.</span>
+              <span>© {currentYear} IG Yazılım.</span>
               <span className="hidden md:inline">|</span>
               <span>Tüm hakları saklıdır.</span>
               <span className="hidden md:inline">|</span>
-              <span className="text-flamingo">Made with ❤️ in Istanbul</span>
+              <span className="text-flamingo">Türkiye'nin Yazılım Firması</span>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
               <a href="#" className="text-white/50 hover:text-flamingo text-sm transition-colors">

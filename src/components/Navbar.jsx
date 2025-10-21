@@ -38,10 +38,10 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-              <span className="text-white font-display font-bold text-xl">CS</span>
+              <span className="text-white font-display font-bold text-xl">IG</span>
             </div>
             <span className={`font-display font-bold text-xl ${isScrolled ? 'text-custom-black' : 'text-white'}`}>
-              Creative Studio
+              IG Yazılım
             </span>
           </Link>
 

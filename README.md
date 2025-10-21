@@ -1,6 +1,6 @@
-# Creative Studio - Modern Web Sitesi
+# IG Yazılım - Türkiye'nin Web Tasarım ve Yazılım Firması
 
-Modern, yaratıcı ve profesyonel multi-page web sitesi. React ve Tailwind CSS ile geliştirilmiştir.
+İstanbul, Ankara, İzmir ve tüm Türkiye'de profesyonel web tasarım, mobil uygulama geliştirme ve dijital pazarlama hizmetleri. Modern ve yaratıcı multi-page web sitesi. React ve Tailwind CSS ile geliştirilmiştir.
 
 ## 🎨 Özellikler
 
