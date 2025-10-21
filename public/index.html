@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoş Geldiniz - Node.js Sayfası</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🚀 Node.js Web Sayfası</h1>
+            <p class="subtitle">Modern ve basit bir web uygulaması</p>
+        </header>
+
+        <main class="main-content">
+            <div class="card">
+                <h2>Hoş Geldiniz!</h2>
+                <p>Bu basit Node.js ve Express ile oluşturulmuş bir web sayfasıdır.</p>
+                <div class="features">
+                    <div class="feature">
+                        <span class="icon">⚡</span>
+                        <h3>Hızlı</h3>
+                        <p>Express.js ile hızlı performans</p>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">📱</span>
+                        <h3>Responsive</h3>
+                        <p>Tüm cihazlarda mükemmel görünüm</p>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">🎨</span>
+                        <h3>Modern</h3>
+                        <p>Güncel tasarım ve teknolojiler</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>Proje Bilgileri</h2>
+                <ul>
+                    <li><strong>Framework:</strong> Express.js</li>
+                    <li><strong>Port:</strong> 3000</li>
+                    <li><strong>Durum:</strong> <span class="status-active">Aktif</span></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Node.js Projesi. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Basit bir animasyon efekti
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card, .info-section');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
