@@ -3,65 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoş Geldiniz - Node.js Sayfası</title>
+    <title>IG Yazılım - Dijital Pazarlama Uzmanları</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="title">🚀 Node.js Web Sayfası</h1>
-            <p class="subtitle">Modern ve basit bir web uygulaması</p>
-        </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>IG <span class="accent">Yazılım</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                <li><a href="#portfolio" class="nav-link">Portföy</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-        <main class="main-content">
-            <div class="card">
-                <h2>Hoş Geldiniz!</h2>
-                <p>Bu basit Node.js ve Express ile oluşturulmuş bir web sayfasıdır.</p>
-                <div class="features">
-                    <div class="feature">
-                        <span class="icon">⚡</span>
-                        <h3>Hızlı</h3>
-                        <p>Express.js ile hızlı performans</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Dijital Dünyada <span class="gradient-text">Fark Yaratın</span></h1>
+                <p class="hero-subtitle">Modern dijital pazarlama çözümleri ile markanızı zirveye taşıyoruz. Profesyonel ekibimizle dijital dönüşümünüzü gerçekleştirin.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Hemen Başlayın</a>
+                    <a href="#services" class="btn btn-secondary">Hizmetlerimiz</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card-float card-1">
+                        <i class="fas fa-chart-line"></i>
+                        <span>SEO</span>
                     </div>
-                    <div class="feature">
-                        <span class="icon">📱</span>
-                        <h3>Responsive</h3>
-                        <p>Tüm cihazlarda mükemmel görünüm</p>
+                    <div class="card-float card-2">
+                        <i class="fas fa-bullhorn"></i>
+                        <span>Reklam</span>
                     </div>
-                    <div class="feature">
-                        <span class="icon">🎨</span>
-                        <h3>Modern</h3>
-                        <p>Güncel tasarım ve teknolojiler</p>
+                    <div class="card-float card-3">
+                        <i class="fas fa-users"></i>
+                        <span>Sosyal Medya</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="info-section">
-                <h2>Proje Bilgileri</h2>
-                <ul>
-                    <li><strong>Framework:</strong> Express.js</li>
-                    <li><strong>Port:</strong> 3000</li>
-                    <li><strong>Durum:</strong> <span class="status-active">Aktif</span></li>
-                </ul>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dijital Pazarlama <span class="accent">Hizmetlerimiz</span></h2>
+                <p class="section-subtitle">Markanızın dijital varlığını güçlendiren kapsamlı çözümler</p>
             </div>
-        </main>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon flamingo">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimizasyonu</h3>
+                    <p>Google'da üst sıralarda yer alın. Organik trafik artışı için profesyonel SEO hizmetleri.</p>
+                    <ul class="service-features">
+                        <li>Anahtar kelime analizi</li>
+                        <li>Teknik SEO</li>
+                        <li>İçerik optimizasyonu</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon supernova">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>Google Ads Yönetimi</h3>
+                    <p>Hedefli reklamlarla doğru müşterilere ulaşın. ROI odaklı reklam kampanyaları.</p>
+                    <ul class="service-features">
+                        <li>Kampanya kurulumu</li>
+                        <li>A/B test optimizasyonu</li>
+                        <li>Performans raporlama</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon hacienda">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Sosyal Medya Yönetimi</h3>
+                    <p>Sosyal medyada güçlü bir varlık oluşturun. İçerik üretimi ve topluluk yönetimi.</p>
+                    <ul class="service-features">
+                        <li>İçerik stratejisi</li>
+                        <li>Topluluk yönetimi</li>
+                        <li>Influencer işbirlikleri</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon tonys-pink">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-mail Marketing</h3>
+                    <p>Müşterilerinizle doğrudan iletişim kurun. Kişiselleştirilmiş e-mail kampanyaları.</p>
+                    <ul class="service-features">
+                        <li>Otomatik e-mail serileri</li>
+                        <li>Segmentasyon</li>
+                        <li>A/B test analizi</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon gunsmoke">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Web Analitik</h3>
+                    <p>Veriye dayalı kararlar alın. Detaylı analiz ve raporlama hizmetleri.</p>
+                    <ul class="service-features">
+                        <li>Google Analytics kurulumu</li>
+                        <li>Conversion tracking</li>
+                        <li>Özel raporlar</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon cape-cod">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobil Pazarlama</h3>
+                    <p>Mobil kullanıcılara özel stratejiler. App store optimizasyonu ve mobil reklamlar.</p>
+                    <ul class="service-features">
+                        <li>ASO optimizasyonu</li>
+                        <li>Mobil reklam kampanyaları</li>
+                        <li>Push notification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <p>&copy; 2025 Node.js Projesi. Tüm hakları saklıdır.</p>
-        </footer>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Dijital Pazarlama <span class="accent">Uzmanlarınız</span></h2>
+                    <p class="about-description">
+                        IG Yazılım olarak, 2020'den beri dijital pazarlama alanında faaliyet gösteriyoruz. 
+                        Müşterilerimizin dijital dönüşüm süreçlerinde yanlarında olarak, markaların 
+                        online görünürlüğünü artırıyor ve satışlarını yükseltiyoruz.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number">150+</h3>
+                            <p class="stat-label">Mutlu Müşteri</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">500+</h3>
+                            <p class="stat-label">Tamamlanan Proje</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">5+</h3>
+                            <p class="stat-label">Yıllık Deneyim</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">24/7</h3>
+                            <p class="stat-label">Destek</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="team-card">
+                        <div class="team-header">
+                            <h4>Uzman Ekibimiz</h4>
+                        </div>
+                        <div class="team-members">
+                            <div class="member">
+                                <div class="member-avatar"></div>
+                                <div class="member-info">
+                                    <h5>SEO Uzmanları</h5>
+                                    <p>Google sertifikalı</p>
+                                </div>
+                            </div>
+                            <div class="member">
+                                <div class="member-avatar"></div>
+                                <div class="member-info">
+                                    <h5>PPC Uzmanları</h5>
+                                    <p>Google Ads sertifikalı</p>
+                                </div>
+                            </div>
+                            <div class="member">
+                                <div class="member-avatar"></div>
+                                <div class="member-info">
+                                    <h5>Sosyal Medya Uzmanları</h5>
+                                    <p>Meta Business sertifikalı</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projelerinizi <span class="accent">Konuşalım</span></h2>
+                <p class="section-subtitle">Dijital pazarlama hedeflerinizi gerçekleştirmek için bizimle iletişime geçin</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon flamingo">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefon</h4>
+                            <p>+90 (555) 123 45 67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon supernova">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p>info@igyazilim.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon hacienda">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adres</h4>
+                            <p>İstanbul, Türkiye</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Telefon Numaranız">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Hizmet Seçiniz</option>
+                                <option value="seo">SEO Optimizasyonu</option>
+                                <option value="ads">Google Ads</option>
+                                <option value="social">Sosyal Medya</option>
+                                <option value="email">E-mail Marketing</option>
+                                <option value="analytics">Web Analitik</option>
+                                <option value="mobile">Mobil Pazarlama</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Projeniz hakkında detaylar..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Teklif Alın</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IG <span class="accent">Yazılım</span></h3>
+                    <p>Dijital pazarlama alanında uzman ekibimizle markanızı dijital dünyada zirveye taşıyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="#services">SEO Optimizasyonu</a></li>
+                        <li><a href="#services">Google Ads</a></li>
+                        <li><a href="#services">Sosyal Medya</a></li>
+                        <li><a href="#services">E-mail Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Şirket</h4>
+                    <ul>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#portfolio">Portföy</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li>+90 (555) 123 45 67</li>
+                        <li>info@igyazilim.com</li>
+                        <li>İstanbul, Türkiye</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IG Yazılım. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        // Basit bir animasyon efekti
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.card, .info-section');
-            cards.forEach((card, index) => {
-                setTimeout(() => {
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }, index * 200);
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
+        });
+
+        // Navbar Background on Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Animate on Scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .stat-item, .contact-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+            const target = parseInt(counter.textContent.replace(/\D/g, ''));
+            const increment = target / 100;
+            let current = 0;
+            
+            const updateCounter = () => {
+                if (current < target) {
+                    current += increment;
+                    counter.textContent = Math.ceil(current) + (counter.textContent.includes('+') ? '+' : '');
+                    setTimeout(updateCounter, 20);
+                } else {
+                    counter.textContent = counter.textContent;
+                }
+            };
+            
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        updateCounter();
+                        counterObserver.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            counterObserver.observe(counter);
         });
     </script>
 </body>
