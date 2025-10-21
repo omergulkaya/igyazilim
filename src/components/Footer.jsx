@@ -19,9 +19,7 @@ const Footer = () => {
     ],
     social: [
       { icon: 'fab fa-facebook-f', url: '#', label: 'Facebook', color: 'hover:bg-blue-600' },
-      { icon: 'fab fa-twitter', url: '#', label: 'Twitter', color: 'hover:bg-blue-400' },
       { icon: 'fab fa-instagram', url: '#', label: 'Instagram', color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500' },
-      { icon: 'fab fa-linkedin-in', url: '#', label: 'LinkedIn', color: 'hover:bg-blue-700' },
       { icon: 'fab fa-youtube', url: '#', label: 'YouTube', color: 'hover:bg-red-600' },
     ],
   };
@@ -35,52 +33,46 @@ const Footer = () => {
       </div>
 
       <div className="container-custom py-16 md:py-20 relative z-10">
-        {/* Newsletter Section */}
-        <div className="mb-16 bg-gradient-to-r from-flamingo to-supernova rounded-3xl p-8 md:p-12 text-center">
-          <h3 className="font-display font-bold text-3xl md:text-4xl text-white mb-4">
+        {/* Newsletter Section - Minimal */}
+        <div className="mb-16 border-t border-white/10 pt-16 text-center">
+          <h3 className="font-display font-bold text-2xl md:text-3xl text-white mb-3">
             IG Yazılım Bülteni
           </h3>
-          <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-            Web tasarım, mobil uygulama ve dijital pazarlama hakkında en son haberler, özel teklifler ve ipuçları.
+          <p className="text-white/60 mb-6 text-sm">
+            Web tasarım ve dijital pazarlama hakkında en son haberler
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input
               type="email"
               placeholder="E-posta adresiniz"
-              className="flex-1 px-6 py-4 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white transition-all"
+              className="flex-1 px-5 py-3 rounded-full bg-white/5 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-flamingo transition-all text-sm"
             />
-            <button className="bg-white text-flamingo font-bold px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-xl">
+            <button className="bg-flamingo text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-flamingo transition-all text-sm">
               Abone Ol
-              <i className="fas fa-arrow-right ml-2"></i>
             </button>
           </div>
         </div>
 
-        {/* SEO - Türkiye Şehirleri */}
-        <div className="mb-12 bg-cape-cod/30 rounded-3xl p-8">
-          <h3 className="font-display font-bold text-2xl text-white mb-6 text-center">
-            Hizmet Verdiğimiz <span className="gradient-text">Şehirler</span>
+        {/* SEO - Türkiye Şehirleri - Minimal */}
+        <div className="mb-12 pb-12 border-b border-white/10">
+          <h3 className="font-display font-bold text-xl text-white mb-6 text-center">
+            Hizmet Verdiğimiz Şehirler
           </h3>
-          <div className="flex flex-wrap justify-center gap-4 text-sm">
+          <div className="flex flex-wrap justify-center gap-3 text-xs">
             {[
               'İstanbul', 'Ankara', 'İzmir', 'Bursa', 'Antalya', 'Adana', 'Gaziantep', 'Konya',
               'Kocaeli', 'Mersin', 'Diyarbakır', 'Kayseri', 'Eskişehir', 'Şanlıurfa', 'Samsun',
               'Denizli', 'Sakarya', 'Hatay', 'Malatya', 'Manisa', 'Kahramanmaraş', 'Van',
-              'Aydın', 'Tekirdağ', 'Balıkesir', 'Muğla', 'Trabzon', 'Elazığ', 'Erzurum', 'Ordu',
-              'Afyon', 'Sivas', 'Çorum', 'Zonguldak', 'Kütahya', 'Tokat', 'Edirne', 'Rize'
+              'Aydın', 'Tekirdağ', 'Balıkesir', 'Muğla', 'Trabzon', 'Elazığ', 'Erzurum', 'Ordu'
             ].map((city, index) => (
               <span
                 key={index}
-                className="px-4 py-2 bg-white/10 hover:bg-gradient-to-r hover:from-flamingo hover:to-supernova rounded-full text-white/80 hover:text-white transition-all duration-300 cursor-pointer"
+                className="px-3 py-1 text-white/50 hover:text-flamingo transition-colors cursor-pointer"
               >
-                {city} Web Tasarım
+                {city}
               </span>
             ))}
           </div>
-          <p className="text-white/60 text-center mt-6 text-sm">
-            IG Yazılım olarak İstanbul merkezli, Türkiye'nin tüm illerinde web tasarım, mobil uygulama geliştirme, 
-            e-ticaret ve dijital pazarlama hizmetleri sunuyoruz.
-          </p>
         </div>
 
         {/* Main Footer Content */}
@@ -171,22 +163,24 @@ const Footer = () => {
                 <div className="w-10 h-10 bg-cape-cod rounded-lg flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-flamingo group-hover:to-supernova transition-all duration-300 flex-shrink-0">
                   <i className="fas fa-map-marker-alt text-flamingo group-hover:text-white"></i>
                 </div>
-                <span className="text-white/70 group-hover:text-white transition-colors pt-2">İstanbul, Türkiye</span>
+                <span className="text-white/70 group-hover:text-white transition-colors pt-2">
+                  Mansuroğlu Mah. 288/1 No:29 Ege Sun Plaza, Bayraklı/İzmir
+                </span>
               </li>
               <li className="flex items-start space-x-3 group">
                 <div className="w-10 h-10 bg-cape-cod rounded-lg flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-flamingo group-hover:to-supernova transition-all duration-300 flex-shrink-0">
                   <i className="fas fa-phone text-flamingo group-hover:text-white"></i>
                 </div>
-                <a href="tel:+905551234567" className="text-white/70 group-hover:text-white transition-colors pt-2">
-                  +90 (555) 123 45 67
+                <a href="tel:+905070025649" className="text-white/70 group-hover:text-white transition-colors pt-2">
+                  +90 (507) 002 56 49
                 </a>
               </li>
               <li className="flex items-start space-x-3 group">
                 <div className="w-10 h-10 bg-cape-cod rounded-lg flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-flamingo group-hover:to-supernova transition-all duration-300 flex-shrink-0">
                   <i className="fas fa-envelope text-flamingo group-hover:text-white"></i>
                 </div>
-                <a href="mailto:info@creativestudio.com" className="text-white/70 group-hover:text-white transition-colors pt-2">
-                  info@creativestudio.com
+                <a href="mailto:info@igyazilim.com" className="text-white/70 group-hover:text-white transition-colors pt-2">
+                  info@igyazilim.com
                 </a>
               </li>
               <li className="flex items-start space-x-3 group">

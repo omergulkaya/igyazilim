@@ -45,22 +45,22 @@ const Contact = () => {
     {
       icon: 'fas fa-map-marker-alt',
       title: 'Adres',
-      info: 'Maslak Mahallesi, Büyükdere Caddesi No:123',
-      info2: 'Sarıyer, İstanbul 34398',
+      info: 'Mansuroğlu Mahallesi 288/1 No:29',
+      info2: 'Ege Sun Plaza, 35535 Bayraklı/İzmir',
       color: 'flamingo',
     },
     {
       icon: 'fas fa-phone',
       title: 'Telefon',
-      info: '+90 (555) 123 45 67',
-      info2: '+90 (212) 987 65 43',
+      info: '+90 (507) 002 56 49',
+      info2: 'IG Yazılım İletişim',
       color: 'supernova',
     },
     {
       icon: 'fas fa-envelope',
       title: 'E-posta',
-      info: 'info@creativestudio.com',
-      info2: 'destek@creativestudio.com',
+      info: 'info@igyazilim.com',
+      info2: 'destek@igyazilim.com',
       color: 'hacienda',
     },
     {
@@ -293,13 +293,14 @@ const Contact = () => {
               {/* Map */}
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden h-96">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.7039823843744!2d29.014491315415908!3d41.08568217929242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5f8f0d1e5a3%3A0x5a8d0c7e5c4d8f9a!2sMaslak%2C%20B%C3%BCy%C3%BCkdere%20Cd.%2C%2034398%20Sar%C4%B1yer%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6249.265671726423!2d27.181349!3d38.449949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd8f826f30327%3A0xe9e176cccc8ee637!2zxLB6bWlyIEfDvHplbGkgT3l1bmN1IEFqYW5zxLE!5e0!3m2!1str!2str!4v1761052054442!5m2!1str!2str"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
-                  title="Creative Studio Location"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="IG Yazılım - İzmir Güzeli Oyuncu Ajansı Konumu"
                 ></iframe>
               </div>
 
@@ -442,7 +443,7 @@ const Contact = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <a
-              href="tel:+905551234567"
+              href="tel:+905070025649"
               className="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center group border-2 border-transparent hover:border-flamingo transition-all"
             >
               <div className="w-20 h-20 bg-flamingo bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -455,12 +456,12 @@ const Contact = () => {
                 Anında destek almak için bizi arayın.
               </p>
               <span className="text-flamingo font-semibold">
-                +90 (555) 123 45 67
+                +90 (507) 002 56 49
               </span>
             </a>
 
             <a
-              href="https://wa.me/905551234567"
+              href="https://wa.me/905070025649"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center group border-2 border-transparent hover:border-green-500 transition-all"
@@ -480,7 +481,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="mailto:info@creativestudio.com"
+              href="mailto:info@igyazilim.com"
               className="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center group border-2 border-transparent hover:border-supernova transition-all"
             >
               <div className="w-20 h-20 bg-supernova bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -493,7 +494,7 @@ const Contact = () => {
                 Detaylı bilgi için e-posta atın.
               </p>
               <span className="text-supernova font-semibold">
-                info@creativestudio.com
+                info@igyazilim.com
               </span>
             </a>
           </div>

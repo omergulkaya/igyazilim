@@ -20,6 +20,7 @@ const Services = () => {
       ],
       color: 'flamingo',
       bgGradient: 'from-flamingo to-supernova',
+      link: '/services/web-design',
     },
     {
       icon: 'fas fa-mobile-alt',
@@ -36,6 +37,7 @@ const Services = () => {
       ],
       color: 'supernova',
       bgGradient: 'from-supernova to-hacienda',
+      link: '/services/mobile-app',
     },
     {
       icon: 'fas fa-shopping-cart',
@@ -52,6 +54,7 @@ const Services = () => {
       ],
       color: 'hacienda',
       bgGradient: 'from-hacienda to-flamingo',
+      link: '/services/ecommerce',
     },
     {
       icon: 'fas fa-chart-line',
@@ -68,6 +71,7 @@ const Services = () => {
       ],
       color: 'tonys-pink',
       bgGradient: 'from-tonys-pink to-flamingo',
+      link: '/services/digital-marketing',
     },
     {
       icon: 'fas fa-paint-brush',
@@ -84,6 +88,7 @@ const Services = () => {
       ],
       color: 'flamingo',
       bgGradient: 'from-flamingo to-tonys-pink',
+      link: '/services/branding-design',
     },
     {
       icon: 'fas fa-shield-alt',
@@ -100,6 +105,7 @@ const Services = () => {
       ],
       color: 'supernova',
       bgGradient: 'from-supernova to-flamingo',
+      link: '/services/support',
     },
   ];
 
@@ -153,10 +159,10 @@ const Services = () => {
         <div className="container-custom">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div
+              <Link
                 key={index}
-                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover-lift card-glow cursor-pointer"
-                onClick={() => setActiveService(index)}
+                to={service.link}
+                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover-lift card-glow"
               >
                 <div className={`bg-gradient-to-br ${service.bgGradient} p-8 text-white relative overflow-hidden`}>
                   <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mr-16 -mt-16"></div>
@@ -180,12 +186,12 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="btn-secondary w-full group-hover:bg-flamingo group-hover:text-white">
+                  <div className="btn-secondary w-full text-center group-hover:bg-flamingo group-hover:text-white">
                     Detaylı Bilgi
                     <i className="fas fa-arrow-right ml-2"></i>
-                  </button>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
